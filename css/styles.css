@@ -17,6 +17,8 @@
     --button-BackgroundColor: #2196f3;
     --button-BackgroundColor-hover:#2F303A}
 body {
+    margin: 0;
+    padding: 0;
     font-family: var(--FirstFont);
     font-style: normal;
     font-weight: 400;
@@ -24,6 +26,11 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--MainColor);}
+.nostyle {
+    list-style: none;}
+.nomargin-nopadding {
+    margin: 0;
+    padding: 0;}
 .link {
     text-decoration: none;}
 .link:hover, .link:focus {
@@ -39,7 +46,6 @@ body {
     text-align: center;
     letter-spacing: 0.06em;}
 .button:hover {
-    /*background-color: var(--button-BackgroundColor-hover);*/
     cursor: pointer;}
 .logo {
     font-family: var(--SecondFont);
@@ -47,6 +53,7 @@ body {
     font-size: 26px;
     line-height: 1.19;
     color: var(--LogoColor);}    
+
 /*Header section*/
 .header-nav-item, .header-nav-accent,
 .header-contact-item, .header-contact-accent {
@@ -59,6 +66,8 @@ body {
     color: var(--MainColor);}
 .header-logo-text{
     color: var(--header-logo-TextColor);}
+
+/* hero section */
 .hero {
     width: 1600px;
     height: 600px;
@@ -67,7 +76,6 @@ body {
 .hero__main-text {
     /* Центрування зробив, як вважав правильним,
     не факт, що так воно і є :) */
-    font-family: var(--FirstFont);
     font-size: 44px;
     font-weight: 900px;
     line-height: 1.36;
@@ -84,29 +92,16 @@ body {
     width: 200px;
     height: 50px;
     border-radius: 4px;
-    
     /*display: flex;
     align-items: center;*/}
+
 /* features*/
-.features {
-    margin:0;
-    padding: 0;}
 .features-item {
-    /*font-family: 'Roboto'; inherit from body*/
-    /*font-style: normal; inherit from body*/
-    /*font-weight: 700; inherit from h3*/
     font-size: var(--MainFontSize);
-    line-height: 1.14;
-    /*letter-spacing: 0.03em; inherit from body*/
+    line-height: 1.14;/*letter-spacing: 0.03em; inherit from body*/
     text-transform: uppercase;
     color: var(--MainColor);}
 .features-item-description{
-    /*font-family: 'Roboto'; inherit from body
-    font-style: normal; inherit from body
-    font-weight: 400; inherit from body
-    font-size: 14px; inherit from body
-    line-height: 1.71; inherit from body
-    letter-spacing: 0.03em; inherit from body*/
     color: var(--DescriptionColor);}
 .visually-hidden {
     position: absolute;
@@ -118,12 +113,10 @@ body {
     padding: 0;
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
-    margin: -1px;
-  /*
-    visibility: hidden;
-    margin: 0;
-    padding: 0;
-    line-height: 0;*/}
+    margin: -1px;}
+
+/* team */
+
 /* footer */
 .footer {
     background-color: var(--MainBackgroundColor);}
@@ -133,7 +126,25 @@ body {
     color: var(--HeroMainColor);}
 .footer-contacts {
     color: rgba(255, 255, 255, .6);}
-/*.footer .footer-contacts:hover,
-.footer .footer-contacts:focus {
-  color: var(--AccentColor);
-}*/
+
+/* Portfolio */
+
+.gallery-element {
+    background-color: #eeeeee;}
+.gallery-item {
+    /*font-family: 'Roboto';*/
+    /*font-style: normal;*/
+    /*font-weight: 700;*/
+    font-size: 18px;
+    line-height: 2;/* identical to box height, or 200% */
+    letter-spacing: 0.06em;
+    color: #212121;}
+.gallery-item-description {
+    /*font-family: 'Roboto';
+    font-style: normal;*/
+    /*font-weight: 400;*/
+    font-size: 16px;
+    line-height: 1.88;/* identical to box height, or 188% */
+    /*letter-spacing: 0.03em;*/
+    color: #757575;
+}
