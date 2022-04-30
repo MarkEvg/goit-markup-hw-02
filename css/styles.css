@@ -1,17 +1,83 @@
+:root {
+    /* Text section */
+    --FirstFont: 'Roboto', sans-serif;
+    --SecondFont: 'Raleway', sans-serif;
+    --footer-logo-TextColor: #ffffff;
+    --MainFontSize: 14px;
+
+    /* Color section */
+    --MainColor: #212121;
+    --HeroMainColor: #ffffff;
+    --DescriptionColor: #757575;
+    --LogoColor: #2196f3;
+    --header-logo-TextColor: #000000;    
+    --MainBackgroundColor: #2f303a;
+    --AccentColor: #6495ed;
+    --ItemAccentColor: #2196f3;
+    --button-BackgroundColor: #2196f3;
+    --button-BackgroundColor-hover:#2F303A
+}
 body {
-    font-family: 'Raleway', sans-serif;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--FirstFont);
+    font-style: normal;
+    font-weight: 400;
+    font-size: var(--MainFontSize); /*variable*/
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--MainColor);
+}
+.link {
+    text-decoration: none;
+}
+.link:hover, .link:focus {
+    color: var(--AccentColor);
+}
+.button {
+    color: currentColor;
+    background-color: var(--button-BackgroundColor);
+    font-family: var(--FirstFont);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;}
+.button:hover {
+    /*background-color: var(--button-BackgroundColor-hover);*/
+    cursor: pointer;}
+    /*Header section*/
+.header-nav-item, .header-nav-accent,
+.header-contact-item, .header-contact-accent {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.header-nav-accent, .header-contact-accent {
+    color: var(--ItemAccentColor);
+}
+.header-nav-item, .header-contact-item  {
+    color: var(--MainColor);
+}
+.logo {
+    font-family: var(--SecondFont);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--LogoColor);
+}
+.header-logo-text{
+    color: var(--header-logo-TextColor);
 }
 .hero {
     width: 1600px;
     height: 600px;
-    color: #ffffff;
-    background-color: #2f303a;
+    color: var(--HeroMainColor);
+    background-color: var(--MainBackgroundColor);
 }
-.hero h1 {
+.hero__main-text {
     /* Центрування зробив, як вважав правильним,
     не факт, що так воно і є :) */
-    font-family: 'Roboto';
+    font-family: var(--FirstFont);
     font-size: 44px;
     font-weight: 900px;
     line-height: 1.36;
@@ -29,31 +95,64 @@ body {
     width: 200px;
     height: 50px;
     border-radius: 4px;
-    color: inherit;
-    background-color: #2196f3;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    text-align: center;
-    letter-spacing: 0.06em;
+    
     /*display: flex;
     align-items: center;*/
 }
 /* features*/
 .features {
-    background-color: #2196f3;
     margin:0;
     padding: 0;
 }
-.features h2 {
+.features-item {
+    /*font-family: 'Roboto'; inherit from body*/
+    /*font-style: normal; inherit from body*/
+    /*font-weight: 700; inherit from h3*/
+    font-size: var(--MainFontSize);
+    line-height: 1.14;
+    /*letter-spacing: 0.03em; inherit from body*/
+    text-transform: uppercase;
+    color: var(--MainColor);
+}
+.features-item-description{
+    /*font-family: 'Roboto'; inherit from body
+    font-style: normal; inherit from body
+    font-weight: 400; inherit from body
+    font-size: 14px; inherit from body
+    line-height: 1.71; inherit from body
+    letter-spacing: 0.03em; inherit from body*/
+    color: var(--DescriptionColor);
+}
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  /*
     visibility: hidden;
     margin: 0;
     padding: 0;
-    line-height: 0;
+    line-height: 0;*/
 }
-.features h3 {
-    margin: 0;
-    padding: 0;
+.footer {
+    background-color: var(--MainBackgroundColor);
 }
+.footer-logo-text{
+    color: var(--footer-logo-TextColor);
+}
+.footer-text {
+    color: var(--HeroMainColor);
+}
+.footer-contacts {
+    color: rgba(255, 255, 255, .6);
+}
+/*.footer .footer-contacts:hover,
+.footer .footer-contacts:focus {
+  color: var(--AccentColor);
+}*/
