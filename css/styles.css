@@ -26,7 +26,8 @@ body {
     letter-spacing: 0.03em;
     color: var(--MainColor);}
 .nostyle {
-    list-style: none;}
+    list-style: none;
+    font-style: normal;}
 .nomargin-nopadding {
     margin: 0;
     padding: 0;}
@@ -48,9 +49,11 @@ body {
 .button-selected {
     background-color: var(--button-BackgroundColor);
     color: var(--ButtonMainColor);}
-
 .button:hover {
     cursor: pointer;}
+.button:focus {
+    color: var(--ButtonMainColor);
+    background-color: var(--button-BackgroundColor);}
 .logo {
     font-family: var(--SecondFont);
     font-weight: 700;
