@@ -8,11 +8,9 @@
     --MainColor: #212121;
     --HeroMainColor: #ffffff;
     --DescriptionColor: #757575;
-    --LogoColor: #2196f3;
+    --AccentColor: #2196f3;
     --header-logo-TextColor: #000000;    
     --MainBackgroundColor: #2f303a;
-    --AccentColor: #6495ed;
-    --ItemAccentColor: #2196f3;
     --footer-logo-TextColor: #ffffff;
     --button-BackgroundColor: #2196f3;
     --button-BackgroundColor-hover:#2F303A}
@@ -36,8 +34,10 @@ body {
 .link:hover, .link:focus {
     color: var(--AccentColor);}
 .button {
+    border: 0;
+    border-radius: 4px;
     color: currentColor;
-    background-color: var(--button-BackgroundColor);
+    /*background-color: var(--button-BackgroundColor);*/
     font-family: var(--FirstFont);
     font-style: normal;
     font-weight: 700;
@@ -45,6 +45,10 @@ body {
     line-height: 1.88;
     text-align: center;
     letter-spacing: 0.06em;}
+.button-selected {
+    background-color: var(--button-BackgroundColor);
+    color: var(--HeroMainColor);}
+
 .button:hover {
     cursor: pointer;}
 .logo {
@@ -52,7 +56,7 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    color: var(--LogoColor);}    
+    color: var(--AccentColor);}    
 
 /*Header section*/
 .header-nav-item, .header-nav-accent,
@@ -61,7 +65,7 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;}
 .header-nav-accent, .header-contact-accent {
-    color: var(--ItemAccentColor);}
+    color: var(--AccentColor);}
 .header-nav-item, .header-contact-item  {
     color: var(--MainColor);}
 .header-logo-text{
@@ -74,7 +78,7 @@ body {
     color: var(--HeroMainColor);
     background-color: var(--MainBackgroundColor);}
 .hero__main-text {
-    /* Центрування зробив, як вважав правильним,
+    /* Забіг трохи вперед. Центрування зробив, як вважав правильним,
     не факт, що так воно і є :) */
     font-size: 44px;
     font-weight: 900px;
@@ -91,7 +95,6 @@ body {
     top: 430px;
     width: 200px;
     height: 50px;
-    border-radius: 4px;
     /*display: flex;
     align-items: center;*/}
 
