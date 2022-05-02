@@ -124,6 +124,7 @@ body {
 
 /* footer */
 .footer {
+    color: var(--FirstMainColor);
     background-color: var(--MainBackgroundColor);}
 .footer-logo-text{
     color: var(--footer-logo-TextColor);}
@@ -137,19 +138,12 @@ body {
 .gallery-element {
     background-color: #eeeeee;}
 .gallery-item {
-    /*font-family: 'Roboto';*/
-    /*font-style: normal;*/
-    /*font-weight: 700;*/
     font-size: 18px;
     line-height: 2;/* identical to box height, or 200% */
     letter-spacing: 0.06em;
     color: #212121;}
 .gallery-item-description {
-    /*font-family: 'Roboto';
-    font-style: normal;*/
-    /*font-weight: 400;*/
     font-size: 16px;
     line-height: 1.88;/* identical to box height, or 188% */
-    /*letter-spacing: 0.03em;*/
     color: #757575;
 }
