@@ -47,7 +47,7 @@ body {
     letter-spacing: 0.06em;}
 .button-selected {
     background-color: var(--button-BackgroundColor);
-    color: var(--HeroMainColor);}
+    color: var(--HeroMainColor)     ;}
 
 .button:hover {
     cursor: pointer;}
@@ -95,6 +95,7 @@ body {
     top: 430px;
     width: 200px;
     height: 50px;
+    background-color: var(--button-BackgroundColor);
     /*display: flex;
     align-items: center;*/}
 
