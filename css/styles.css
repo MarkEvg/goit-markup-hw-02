@@ -6,14 +6,15 @@
 
     /* Color section */
     --MainColor: #212121;
-    --HeroMainColor: #ffffff;
+    --FirstMainColor: #ffffff;
+    --ButtonMainColor: #ffffff;
     --DescriptionColor: #757575;
     --AccentColor: #2196f3;
     --header-logo-TextColor: #000000;    
     --MainBackgroundColor: #2f303a;
     --footer-logo-TextColor: #ffffff;
     --button-BackgroundColor: #2196f3;
-    --button-BackgroundColor-hover:#2F303A}
+    --button-BackgroundColor-hover:#2F303A;}
 body {
     margin: 0;
     padding: 0;
@@ -47,7 +48,7 @@ body {
     letter-spacing: 0.06em;}
 .button-selected {
     background-color: var(--button-BackgroundColor);
-    color: var(--HeroMainColor)     ;}
+    color: var(--ButtonMainColor: #ffffff;)     ;}
 
 .button:hover {
     cursor: pointer;}
@@ -75,7 +76,7 @@ body {
 .hero {
     width: 1600px;
     height: 600px;
-    color: var(--HeroMainColor);
+    color: var(--FirstMainColor: #ffffff;);
     background-color: var(--MainBackgroundColor);}
 .hero__main-text {
     /* Забіг трохи вперед. Центрування зробив, як вважав правильним,
@@ -127,7 +128,7 @@ body {
 .footer-logo-text{
     color: var(--footer-logo-TextColor);}
 .footer-text {
-    color: var(--HeroMainColor);}
+    color: var(--FirstMainColor: #ffffff;);}
 .footer-contacts {
     color: rgba(255, 255, 255, .6);}
 
