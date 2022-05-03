@@ -78,7 +78,7 @@ body {
 .hero {
     width: 1600px;
     height: 600px;
-    color: var(--FirstMainColor: #ffffff;);
+    color: var(--FirstMainColor);
     background-color: var(--MainBackgroundColor);}
 .hero__main-text {
     /* Забіг трохи вперед. Центрування зробив, як вважав правильним,
@@ -133,7 +133,7 @@ body {
 .footer-logo-text{
     color: var(--footer-logo-TextColor);}
 .footer-text {
-    color: var(--FirstMainColor: #ffffff;);}
+    color: var(--FirstMainColor);}
 .footer-contacts {
     color: rgba(255, 255, 255, .6);}
 
