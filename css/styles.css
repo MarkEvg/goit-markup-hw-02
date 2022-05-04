@@ -12,9 +12,12 @@
     --AccentColor: #2196f3;
     --header-logo-TextColor: #000000;    
     --MainBackgroundColor: #2f303a;
+    --SecondBackgroundColor: #ffffff;
     --footer-logo-TextColor: #ffffff;
     --button-BackgroundColor: #2196f3;
-    --button-BackgroundColor-hover:#2F303A;}
+    --button-BackgroundColor-hover:#2F303A;
+    --GalleryItemColor: #212121;}
+    
 body {
     margin: 0;
     padding: 0;
@@ -91,18 +94,12 @@ body {
     text-transform: uppercase;
     color: var(--FirstMainColor);}
 .hero-button {
-    /* Координати задав для спроби,
-    display: flex; та align-items: center; поки що закоментував,
-    бо не зрозумів, як воно працює */
-    position: absolute;
-    left: 700px;
-    top: 430px;
     width: 200px;
     height: 50px;
     color: var(--FirstMainColor);
     background-color: var(--button-BackgroundColor);
-    /*display: flex;
-    align-items: center;*/}
+
+    align-items: center;}
 
 /* features*/
 .features-item {
@@ -139,15 +136,18 @@ body {
 
 /* Portfolio */
 
+.gallery-filter {
+    text-align: center;
+}
 .gallery-element {
-    background-color: #eeeeee;}
+    background-color: var(--SecondBackgroundColor);}
 .gallery-item {
     font-size: 18px;
     line-height: 2;/* identical to box height, or 200% */
     letter-spacing: 0.06em;
-    color: #212121;}
+    color: var(--GalleryItemColor);}
 .gallery-item-description {
     font-size: 16px;
     line-height: 1.88;/* identical to box height, or 188% */
-    color: #757575;
+    color: var(--DescriptionColor);
 }
