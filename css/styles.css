@@ -10,34 +10,44 @@
     --ButtonMainColor: #ffffff;
     --DescriptionColor: #757575;
     --AccentColor: #2196f3;
-    --header-logo-TextColor: #000000;    
+    --header-logo-TextColor: #000000;
+    --HeaderBorderColor: #ececec;
     --MainBackgroundColor: #2f303a;
     --SecondBackgroundColor: #ffffff;
+    --ContactColor: #757575;
+    --TeamBackgroundColor: #f5f4fa;
     --footer-logo-TextColor: #ffffff;
     --button-BackgroundColor: #2196f3;
     --button-BackgroundColor-hover:#2F303A;
-    --GalleryItemColor: #212121;}
-    
+    --GalleryItemColor: #212121;
+}
 body {
+    width: 1600px;
     margin: 0;
-    padding: 0;
+    padding: 0;;
     font-family: var(--FirstFont);
     font-style: normal;
     font-weight: 400;
     font-size: var(--MainFontSize); /*variable*/
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--MainColor);}
+    color: var(--MainColor);
+}
 .nostyle {
     list-style: none;
-    font-style: normal;}
+    font-style: normal;
+    padding: 0;
+}
 .nomargin-nopadding {
     margin: 0;
-    padding: 0;}
+    padding: 0;
+}
 .link {
-    text-decoration: none;}
+    text-decoration: none;
+}
 .link:hover, .link:focus {
-    color: var(--AccentColor);}
+    color: var(--AccentColor);
+}
 .button {
     border: 0;
     border-radius: 4px;
@@ -48,67 +58,92 @@ body {
     font-size: 16px;
     line-height: 1.88;
     text-align: center;
-    letter-spacing: 0.06em;}
+    letter-spacing: 0.06em;
+}
 .button-selected {
     background-color: var(--button-BackgroundColor);
-    color: var(--ButtonMainColor);}
-.button:hover {
-    cursor: pointer;}
-.button:focus {
     color: var(--ButtonMainColor);
-    background-color: var(--button-BackgroundColor);}
+}
+.button:hover {
+    cursor: pointer;
+}
+.button:active {
+    color: var(--ButtonMainColor);
+    background-color: var(--button-BackgroundColor);
+}
 .logo {
     font-family: var(--SecondFont);
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    color: var(--AccentColor);}    
+    color: var(--AccentColor);
+}
 
 /*Header section*/
+.header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 215px;
+    border-bottom: 1px solid var(--HeaderBorderColor);
+}
 .header-nav-item, .header-nav-accent,
 .header-contact-item, .header-contact-accent {
     font-weight: 500;
     line-height: 1.14;
-    letter-spacing: 0.02em;}
+    letter-spacing: 0.02em;
+}
 .header-nav-accent, .header-contact-accent {
-    color: var(--AccentColor);}
-.header-nav-item, .header-contact-item  {
-    color: var(--MainColor);}
+    color: var(--AccentColor);
+}
+.header-nav-item {
+    color: var(--MainColor);
+}
+.header-contact-item {
+    color: var(--ContactColor);
+}
 .header-logo-text{
-    color: var(--header-logo-TextColor);}
+    color: var(--header-logo-TextColor);
+}
 
 /* hero section */
 .hero {
-    width: 1600px;
-    height: 600px;
+    margin: 0;
+    /*height: 600px;*/
     color: var(--FirstMainColor);
-    background-color: var(--MainBackgroundColor);}
+    background-color: var(--MainBackgroundColor);
+}
 .hero__main-text {
     /* Забіг трохи вперед. Центрування зробив, як вважав правильним,
     не факт, що так воно і є :) */
     font-size: 44px;
-    font-weight: 900px;
+    font-weight: 900;
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--FirstMainColor);}
+}
 .hero-button {
     width: 200px;
     height: 50px;
     color: var(--FirstMainColor);
     background-color: var(--button-BackgroundColor);
-
-    align-items: center;}
+}
 
 /* features*/
+.features-list {
+    width: 270px;
+}
 .features-item {
-    font-size: var(--MainFontSize);
-    line-height: 1.14;/*letter-spacing: 0.03em; inherit from body*/
+    margin: 0;
+    margin-bottom: 10px;
+    line-height: 1.14;
     text-transform: uppercase;
-    color: var(--MainColor);}
+    color: var(--MainColor);
+}
 .features-item-description{
-    color: var(--DescriptionColor);}
+    margin: 0;
+    color: var(--DescriptionColor);
+}
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -119,12 +154,67 @@ body {
     padding: 0;
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
-    margin: -1px;}
+    margin: -1px;
+}
+
+/* about */
+.about-header {
+    margin: 0;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+.about-list {
+    margin: 0;
+}
+
 
 /* team */
+.team {
+    padding-top: 95px;
+    padding-bottom: 95px;
+    background-color: var(--TeamBackgroundColor);
+}
+.team-header {
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 0;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+}
+/*.team-list {
+    display: flex;
+}*/
+/*.team-list-item {
+    margin:0;
+    padding: 0;
+}*/
+.team-list-item-header {
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;/* identical to box height */
+}
+.team-list-item-descriptor {
+    margin: 0;
+    /*margin-bottom: 30px;*/
+    padding: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;/* identical to box height */
+}
 
 /* footer */
 .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 215px;
     color: var(--FirstMainColor);
     background-color: var(--MainBackgroundColor);}
 .footer-logo-text{
@@ -140,12 +230,14 @@ body {
     text-align: center;
 }
 .gallery-element {
-    background-color: var(--SecondBackgroundColor);}
+    background-color: var(--SecondBackgroundColor);
+}
 .gallery-item {
     font-size: 18px;
     line-height: 2;/* identical to box height, or 200% */
     letter-spacing: 0.06em;
-    color: var(--GalleryItemColor);}
+    color: var(--GalleryItemColor);
+}
 .gallery-item-description {
     font-size: 16px;
     line-height: 1.88;/* identical to box height, or 188% */

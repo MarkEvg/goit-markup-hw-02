@@ -8,11 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
   </head>
   <body>
     <!-- Page header -->
-    <header>
+    <header class="header">
       <!-- The logo is always a link -->
       <a class="link logo" href="./index.html" lang="en">Web<span class="header-logo-text">Studio</span></a>
       <!-- Main navigation -->
@@ -30,62 +31,62 @@
     </header>
     <main>
       <section class="hero"> <!-- done -->
-        <div>
-          <h1 class="hero__main-text">Ефективні рішення<br>для вашого бізнесу</h1>
+        <div class="hero__main-text">
+          <h1 class="nomargin-nopadding">Ефективні рішення<br>для вашого бізнесу</h1>
           <button type="button" class="button hero-button">Замовити послугу</button>
         </div>
       </section>
       <section class="features">
         <h2 class="visually-hidden">Чому ми?</h2>
-        <ul class="nostyle">
+        <ul class="nostyle features-list">
           <li>
-            <h3 class="features-item nomargin-nopadding">Увага до деталей</h3>
-            <p class="features-item-description nomargin-nopadding">Ідейні міркування, а також початок повсякденної работи по формуванню позиції.</p>
+            <h4 class="features-item">Увага до деталей</h4>
+            <p class="features-item-description">Ідейні міркування, а також початок повсякденної работи по формуванню позиції.</p>
           </li>
           <li>
-            <h3 class="features-item nomargin-nopadding">Пунктуальність</h3>
-            <p class="features-item-description nomargin-nopadding">Завдання організації, особливо ж рамки та місце навчання кадрів тягне за собою.</p>
+            <h4 class="features-item">Пунктуальність</h4>
+            <p class="features-item-description">Завдання організації, особливо ж рамки та місце навчання кадрів тягне за собою.</p>
           </li>
           <li>
-            <h3 class="features-item nomargin-nopadding">Планування</h3>
-            <p class="features-item-description nomargin-nopadding">Консультація з широким активом також в в значній мірі обумовлює.</p>
+            <h4 class="features-item">Планування</h4>
+            <p class="features-item-description">Консультація з широким активом також в в значній мірі обумовлює.</p>
           </li>
           <li>
-            <h3 class="features-item nomargin-nopadding">Сучасні технології</h3>
-            <p class="features-item-description nomargin-nopadding">Значущість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+            <h4 class="features-item">Сучасні технології</h4>
+            <p class="features-item-description">Значущість цих проблем настільки очевидна, що реалізація планових завдань.</p>
           </li>
         </ul>
       </section>
       <section class="about"> <!-- done -->
-        <h2>Чим ми займаємося</h2>
-        <ul class="nostyle">
-          <li><img src="./images/box1.jpg" alt="планшет з безддротовою клавіатурою" width="370" height="294"></li>
-          <li><img src="./images/box2.jpg" alt="Ноутбук та смартфон" width="370" height="294"></li>
-          <li><img src="./images/box3.jpg" alt="Процес вибору кольору" width="370" height="294"></li>
+        <h2 class="about-header">Чим ми займаємося</h2>
+        <ul class="nostyle about-list">
+          <li class="about-item"><img src="./images/box1.jpg" alt="планшет з безддротовою клавіатурою" width="370" height="294"></li>
+          <li class="about-item"><img src="./images/box2.jpg" alt="Ноутбук та смартфон" width="370" height="294"></li>
+          <li class="about-item"><img src="./images/box3.jpg" alt="Процес вибору кольору" width="370" height="294"></li>
         </ul>
       </section>
       <section class="team">
-        <h2>Наша команда</h2>
-        <ul class="nostyle"> <!-- Картки співробітників -->
-          <li>
+        <h2 class="team-header">Наша команда</h2>
+        <ul class="nostyle team-list"> <!-- Картки співробітників -->
+          <li class="team-list-item">
             <img src="./images/team/img1.jpg" alt="Product Designer" width="270" height="260">
-            <h3 class="nomargin-nopadding">Ігор Дем'яненко</h3>
-            <p class="nomargin-nopadding" lang="en">Product Designer</p>
+            <h3 class="team-list-item-header">Ігор Дем'яненко</h3>
+            <p class="team-list-item-descriptor"" lang="en">Product Designer</p>
           </li>
-          <li>
+          <li class="team-list-item">
             <img src="./images/team/img2.jpg" alt="Frontend Developer" width="270" height="260">
-            <h3 class="nomargin-nopadding">Ольга Рєпіна</h3>
-            <p class="nomargin-nopadding" lang="en">Frontend Developer</p>
+            <h3 class="team-list-item-header">Ольга Рєпіна</h3>
+            <p class="team-list-item-descriptor"" lang="en">Frontend Developer</p>
           </li>
-          <li>
+          <li class="team-list-item">
             <img src="./images/team/img3.jpg" alt="Marketing" width="270" height="260">
-            <h3 class="nomargin-nopadding">Микола Тарасов</h3>
-            <p class="nomargin-nopadding" lang="en">Marketing</p>
+            <h3 class="team-list-item-header">Микола Тарасов</h3>
+            <p class="team-list-item-descriptor"" lang="en">Marketing</p>
           </li>
-          <li>
+          <li class="team-list-item">
             <img src="./images/team/img4.jpg" alt="UI Designer" width="270" height="260">
-            <h3 class="nomargin-nopadding">Михайло Єрмаков</h3>
-            <p class="nomargin-nopadding" lang="en">UI Designer</p>
+            <h3 class="team-list-item-header">Михайло Єрмаков</h3>
+            <p class="team-list-item-descriptor"" lang="en">UI Designer</p>
           </li>
         </ul>
       </section>
