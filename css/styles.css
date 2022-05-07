@@ -22,16 +22,22 @@
     --GalleryItemColor: #212121;
 }
 body {
-    width: 1600px;
-    margin: 0;
-    padding: 0;;
     font-family: var(--FirstFont);
-    font-style: normal;
-    font-weight: 400;
     font-size: var(--MainFontSize); /*variable*/
-    line-height: 1.71;
-    letter-spacing: 0.03em;
     color: var(--MainColor);
+    background-color: var(--SecondBackgroundColor);
+}
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 .nostyle {
     list-style: none;
@@ -59,13 +65,16 @@ body {
     line-height: 1.88;
     text-align: center;
     letter-spacing: 0.06em;
+    cursor: pointer;
 }
 .button-selected {
     background-color: var(--button-BackgroundColor);
     color: var(--ButtonMainColor);
 }
-.button:hover {
-    cursor: pointer;
+.button:hover,
+.button:focus {
+    color: var(--FirstMainColor);
+    background-color: var(--button-BackgroundColor);
 }
 .button:active {
     color: var(--ButtonMainColor);
@@ -108,7 +117,6 @@ body {
 /* hero section */
 .hero {
     margin: 0;
-    /*height: 600px;*/
     color: var(--FirstMainColor);
     background-color: var(--MainBackgroundColor);
 }
@@ -123,38 +131,29 @@ body {
     text-transform: uppercase;
 }
 .hero-button {
-    width: 200px;
-    height: 50px;
     color: var(--FirstMainColor);
     background-color: var(--button-BackgroundColor);
 }
 
 /* features*/
-.features-list {
-    width: 270px;
-}
+/*.features-list {
+}*/
 .features-item {
     margin: 0;
     margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 700;
     line-height: 1.14;
+    letter-spacing: 0.03;
     text-transform: uppercase;
     color: var(--MainColor);
 }
 .features-item-description{
     margin: 0;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.03;
     color: var(--DescriptionColor);
-}
-.visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
 }
 
 /* about */
@@ -169,12 +168,9 @@ body {
     margin: 0;
 }
 
-
 /* team */
 .team {
-    padding-top: 95px;
-    padding-bottom: 95px;
-    background-color: var(--TeamBackgroundColor);
+    background-color:var(--TeamBackgroundColor);
 }
 .team-header {
     margin: 0;
@@ -188,7 +184,8 @@ body {
 /*.team-list {
     display: flex;
 }*/
-/*.team-list-item {
+.team-list-item {
+    background-color: var(--SecondBackgroundColor);
     margin:0;
     padding: 0;
 }*/
@@ -212,23 +209,22 @@ body {
 
 /* footer */
 .footer {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    padding-left: 215px;
     color: var(--FirstMainColor);
-    background-color: var(--MainBackgroundColor);}
+    background-color: var(--MainBackgroundColor);
+}
 .footer-logo-text{
-    color: var(--footer-logo-TextColor);}
+    color: var(--footer-logo-TextColor);
+}
 .footer-text {
-    color: var(--FirstMainColor);}
+    color: var(--FirstMainColor);
+}
 .footer-contacts {
-    color: rgba(255, 255, 255, .6);}
+    color: rgba(255, 255, 255, .6);
+}
 
 /* Portfolio */
 
-.gallery-filter {
-    text-align: center;
-}
+/*gallery*/
 .gallery-element {
     background-color: var(--SecondBackgroundColor);
 }
